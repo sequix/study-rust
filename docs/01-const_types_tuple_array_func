@@ -1,0 +1,58 @@
+// : type is optional
+let var_name : type = something;
+
+// : tyep is mandatory
+const const_name : type = <const expression>;
+
+let x = 1;
+//! x = 2; // by default var is mutable
+let x = 3; // using let twice got shadowing variable;
+
+integers
+i8 i16 i32 i64 i128
+u8 u16 u32 u64 u128
+isize usize
+
+integer constants
+1_000 == 1000
+0xff
+0o77
+0b1111_0000
+b'A' (byte u8)
+
+integer overflows
+debug mode: rust will detact overflow, not in release mode
+
+floats
+f32 f64
+let x = 3.0; // f64
+let x: f32 = 3.0; // f32
+
+bool
+true false
+let f: bool = false;
+
+char
+let x = 'z'; // 4byte unicode
+
+tuple
+let tup: (i32, f64, u8) = (234, 3.2, 1);
+let (x, y, z) = tup;
+let a = tup.0;
+let b = tup.1;
+
+array (same type)
+let a = [1, 2, 3];
+let a: [i32; 5] = [1, 2, 3, 4, 5];
+let a = [3; 5]; // 5 个元素都是 3
+a[0]
+a[tooBig] // runtime error, not like c
+
+3.4 functions
+fn function_name(var1: type1, var2: type2) -> ret_type {
+    // ....
+
+    // last value as return value
+    // 没有分号，rust 严格区分 语句和值
+    x + 1
+}

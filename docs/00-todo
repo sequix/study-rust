@@ -1,0 +1,7 @@
+vec 存储 String 会拿走其 ownership 吗？
+答：看 push 是否拿走插入对象的 ownership，即push 的参数是不是 非ref；
+
+hashmap 拿走 ownership 代表什么？
+答：一个变量的 owner 是一个另一个 rust 对象，比如一个函数，函数的scope 完了，变量也就被释放了（RAII）
+
+如何自定义自己的 ? 操作符？

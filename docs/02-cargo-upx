@@ -1,0 +1,18 @@
+# install
+dnf install rust cargo
+
+# compile
+rustc main.rs
+
+# cargo
+cargo new <project-name>
+cargo build
+cargo check
+cargo run
+cargo build --release
+
+# minimalize binary size
+# see also: http://www.aloxaf.com/2018/09/reduce_rust_size/#%E4%BD%BF%E7%94%A8-release-%E6%9E%84%E5%BB%BA
+cargo build --release
+strip -s <binary>
+upx -9 <binary>
