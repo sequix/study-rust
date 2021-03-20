@@ -42,6 +42,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     // expect() 和 unwrap() 一样，但可以自定义错误信息
     // let f = File::open("./test").expect("failed to open ./test");
 
+    // ? 操作符可以用在返回 Result 的函数上，其作用和 第一个 read_username_form_file 一样
     let f = File::open("./test")?;
     Ok(())
 }

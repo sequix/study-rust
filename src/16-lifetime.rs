@@ -36,7 +36,7 @@ fn main() {
     let str1 = String::from("abcd");
     let rst;
     {
-        //  string literal and its type is &'static str.
+        // string literal and its type is &'static str.
         // A string literal is a string slice that is statically allocated,
         // meaning that it’s saved inside our compiled program, and exists for the entire duration it runs.
         // let str2: &'static str = "xyz";
