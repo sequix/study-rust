@@ -1,5 +1,5 @@
 [package]
-name = "study-rust"
+name = "study-rust2"
 version = "0.1.0"
 authors = ["sequix <sequix@163.com>"]
 edition = "2018"
@@ -7,9 +7,6 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-rand = "0.5.5"
-
-# 默认，release 编译出的二进制出错时，程序会 unwind，即回溯 stack
-# 若需要直接终止，使用下述配置
-# [profile.release]
-# panic = 'abort'
+#clap = "2.27.1" # from crates.io
+#rand = { git = "https://github.com/rust-lang-nursery/rand" } # from online repo
+#bar = { path = "../bar" } # from a path in the local filesystem
