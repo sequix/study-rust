@@ -60,7 +60,7 @@ fn main() {
 
     /*
         error[E0502]: cannot borrow `v` as mutable because it is also borrowed as immutable
-      --> src/main.rs:53:5
+      --> src/38-lifetime-anno:53:5
        |
     52 |     let first = &v[0];
        |                  - immutable borrow occurs here

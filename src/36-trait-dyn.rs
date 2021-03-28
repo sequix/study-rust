@@ -23,6 +23,9 @@ impl Animal for Cow {
 // rustc 必须知道函数返回值的大小，所以不能直接返回一个 trait
 // 所以可以返回一个 Box，指向一个 trait
 // rust 设计希望明确所有的 heap 不定大小分配，所以引入 dyn 指明
+// See also:
+// https://doc.rust-lang.org/edition-guide/rust-2018/trait-system/dyn-trait-for-trait-objects.html
+// https://doc.rust-lang.org/edition-guide/rust-2018/trait-system/impl-trait-for-returning-complex-types-with-ease.html
 fn random_animal(random_number: f64) -> Box<dyn Animal> {
     if random_number < 0.5 {
         Box::new(Sheep {})
@@ -36,4 +39,3 @@ fn main() {
     let animal = random_animal(random_number);
     println!("You've randomly chosen an animal, and it says {}", animal.noise());
 }
-
