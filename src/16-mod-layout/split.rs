@@ -3,7 +3,7 @@
 mod my;
 
 // 使用下述命令执行
-// rustc src/16-mod-layout/split.rs && ./split
+// rustc launage/16-mod-layout/split.rs && ./split
 
 // 文件夹、文件都是 mod 路径中的一部分，
 // 对于文件全局作用域中的名字，其为 文件名mod 的一部分

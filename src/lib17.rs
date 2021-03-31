@@ -1,5 +1,5 @@
 // crate 是 rustc 的编译单元
-// rustc --crate-type=lib src/lib17.rs
+// rustc --crate-type=lib launage/lib17.rs
 
 pub fn public_function() {
     println!("called rary's `public_function()`");
